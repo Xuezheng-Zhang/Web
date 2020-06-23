@@ -1,0 +1,357 @@
+@charset "utf-8";
+/* CSS Document */
+
+body
+{
+	background-color:#323334;
+	margin: 0 auto;
+	padding: 0;
+	
+}
+
+/*------------------------导航栏上的导航栏--------------------*/
+body,h1,h2,h3,h4,h5,h6,p,ol,ul{
+margin: 0;
+padding:0;
+list-style: none;
+}
+a{
+text-decoration: none;
+color:black;
+}
+a:hover{
+color: #FB0B0D;
+}
+
+img{
+vertical-align: bottom;
+}
+#nav{
+height: 30px;
+background: #eee;
+line-height: 30px;
+}
+#nav .rightNav{
+float: right;
+}
+#nav .rightNav>li{
+float: left;
+padding: 0 5px;
+}
+#nav .rightNav>li>b{
+border-left: 1px solid white;
+margin-right: 5px;
+}
+
+
+#nav .leftNav>li{
+float: left;
+padding-left: 10px;
+}
+#nav .leftNav>li>u{
+
+ width: 0;
+height: 0;
+border-top: 7px solid white;
+border-left: 7px solid transparent;
+border-right: 7px solid transparent;
+border-bottom: 7px solid transparent;
+float: right;
+margin-top: 12px;
+margin-left: 7px;
+
+display: inline-block;
+width: 0;
+height: 0;
+border: 7px solid transparent;
+border-top: 7px solid white;
+position: relative;
+top:4px;
+}
+
+#nav .address{
+
+position: relative;
+}
+#nav .select{
+
+display: none;
+
+position: absolute;
+
+z-index: 100;
+color: white;
+}
+
+#nav .address:hover .select{
+
+display: block;
+}
+
+
+
+
+
+/*----------------导航栏--------------*/
+
+.nav
+{
+	width:1300px;
+	height: 133px;
+	margin-top: 0px;
+	margin-left: 520px;
+	font-family:"microsoft  yahei";
+	
+}
+.nav li/*所有li 的公属性*/
+{
+	list-style: none;
+	float: left;
+	width: 107px;
+	height:100%;
+	text-align: center;
+	line-height: 133px;
+	font-size: 18px;
+	color:white;
+	cursor:pointer;
+	
+}
+.a:hover
+{
+	background-color:#007AFA;
+	color:aliceblue;
+}
+.nav .logo
+{
+	width:363px;
+	height: 100%;
+	font-size:64px;
+	color:#007AFA;
+	font-family:"microsoft  yahei";
+	
+		
+}
+.sign
+{
+	margin-top: 20px;
+	float: right;
+	
+}
+.gouwu{
+	
+	margin-top: 20px;
+	float: right;
+	padding-left: 10px;
+	padding-right: 10px;
+    cursor: pointer;
+
+}
+.g1
+{
+	float: right;
+	text-align: center;
+	margin-top: 5px;
+	margin-left: 4px;
+}
+.g1:hover
+{
+	color: red;
+}
+a
+{
+	text-decoration: none;
+}
+.nav .famaliy
+{
+	background-color: #007AFA;
+	color: aliceblue;
+}
+.banner
+{
+	width:100%;
+	height: 200px;
+	margin: 0 auto;
+	border:solid #FDFDFD;
+	background: url( "../imge/摄图网_500373394_科技banner背景（非企业商用）.jpg") no-repeat;
+	background-size: cover;
+	
+}
+.show
+{
+	width: 100%;
+	height: 500px;
+	margin-top: 10px;
+}
+.nav2{
+	float: left;
+	width: 240px;
+	height: 490px;
+	border: solid #007AFA;
+}
+/*-----------展示区--------*/
+.bargan
+{
+	float: left;
+	width: 1366px;
+	height: 500px;
+	
+}
+.b1{
+	width: 330px;
+	height: 240px;
+	float: left;
+	border: solid #007AFA;
+	margin-right: 6px;
+	cursor: pointer;
+}
+.b2{
+	width: 330px;
+	height: 240px;
+	float: left;
+	border: solid #007AFA;
+	margin-right: 6px;
+	cursor: pointer;
+}
+.b3{
+	width: 330px;
+	height: 240px;
+	float: left;
+	border: solid #007AFA;
+	margin-right: 6px;
+	cursor: pointer;
+}
+.b4{
+	width: 330px;
+	height: 240px;
+	float: left;
+	border: solid #007AFA;
+	cursor: pointer;
+}
+.b5{
+	width: 330px;
+	height: 240px;
+	float: left;
+	border: solid #007AFA;
+	margin-right: 6px;
+	margin-top: 5px;
+	cursor: pointer;
+}
+.b6{
+	width: 330px;
+	height: 240px;
+	float: left;
+	border: solid #007AFA;
+	margin-right: 6px;
+	margin-top: 5px;
+	cursor: pointer;
+}
+
+.b7{
+	width: 330px;
+	height: 240px;
+	float: left;
+	border: solid #007AFA;
+	margin-right: 6px;
+	margin-top: 5px;
+	cursor: pointer;
+}
+
+.b8{
+	width: 330px;
+	height: 240px;
+	float: left;
+	border: solid #007AFA;
+	margin-top: 5px;
+	cursor: pointer;
+}
+
+
+/*-----------其他区域---------*/
+.ad{
+	float: left;
+	width: 240px;
+	height: 490px;
+	border: solid #007AFA;
+}
+.wenzi
+{
+	margin-top: 8px;
+	margin-left:30px;
+	float: left;
+	
+}
+.huo
+{
+	
+}
+.f1{
+	margin-top: 33px;
+	float: left
+}
+.i1{
+	float: left;
+}
+
+.root
+{   margin-top: 1px;
+	width: 100%;
+	height: 70px;
+	text-align: center;
+	padding-top: 15px;
+	font-size: 28px;
+	
+}
+.fenlei
+{
+	list-style: none;
+}
+.daoh li
+{
+	width: 80px;
+	height:100%;
+
+	text-align: center;
+	line-height: 50px;
+	font-size: 18px;
+	color:white;
+	cursor:pointer;
+}
+.daoh li:hover
+{
+	color: red;
+}
+/*--------------搜索栏--------------*/
+#search { 
+    width: 440px;
+    height: 40px;
+    border:none;    /*取消默认的边框以设置自定义边框*/
+    outline:none;   /*取消浏览器默认的蓝光边框以设置自定义的输入框*/
+    font-size: 16px;        
+    color: rgb(112, 112, 112);
+    margin-left: 10px;
+}
+.searchbar {        /*目的是设置自定义边框，比如圆角与阴影*/
+    border: rgb(218, 218, 218) solid 1px;
+    border-radius: 2em;
+    width: 552px;
+    height: 42px;
+    box-shadow: 0px 0px 5px rgb(212, 212, 212);
+    
+	margin-top: 100px;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: aliceblue;
+}
+
+.mcp {
+    height: 35px;
+}
+
+.mg {
+    height: 25px;
+    margin-left: 15px;
+}
+#search, .mcp, .mg {
+    vertical-align: middle;
+}
+

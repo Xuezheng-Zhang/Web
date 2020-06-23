@@ -1,0 +1,80 @@
+@-webkit-keyframes fadeIn {
+    0% {
+        opacity: 0; /*初始状态 透明度为0*/
+    }
+    50% {
+        opacity: 0; /*中间状态 透明度为0*/
+    }
+    100% {
+        opacity: 0.8; /*结尾状态 透明度为1*/
+    }
+}
+.head{
+    height: 80px;
+    width: 100%;
+    background-color:rgba(230,255,255,0.2);
+}
+.logo{
+    height: 80px;
+    width: 10%;
+    float: left;
+    margin-top: 20px;
+    margin-left: 40px;
+}
+.jj{
+	color: white;
+}
+.jieshao{
+    height: 80px;
+    width: 10%;
+    float: right;
+    margin-top: 30px;
+	cursor: pointer;
+}
+.shouye{
+    height: 80px;
+    width: 8%;
+    float: right;
+    margin-top: 30px;
+}
+.riji{
+    height: 80px;
+    width: 10%;
+    float: right;
+    margin-top: 30px;
+}
+.guanyu{
+    height: 80px;
+    width: 8%;
+    float: right;
+    margin-top: 30px;
+}
+.mid{
+    height: 340px;
+    width: 280px;
+    margin-top: 180px;
+    margin-left: 70px;
+    /*background-color:rgba(230,255,255,0.6);*/
+}
+.welcome{
+    height: 600px;
+    width: 100%;
+}
+.welcome{
+    -webkit-animation-name: fadeIn; /*动画名称*/
+    -webkit-animation-duration: 3s; /*动画持续时间*/
+    -webkit-animation-iteration-count: 1; /*动画次数*/
+    -webkit-animation-delay: 0s; /*延迟时间*/
+}
+.the{
+    -webkit-animation-name: fadeIn; /*动画名称*/
+    -webkit-animation-duration: 3s; /*动画持续时间*/
+    -webkit-animation-iteration-count: 1; /*动画次数*/
+    -webkit-animation-delay: 0s; /*延迟时间*/
+}
+.zxz{
+    -webkit-animation-name: fadeIn; /*动画名称*/
+    -webkit-animation-duration: 3s; /*动画持续时间*/
+    -webkit-animation-iteration-count: 1; /*动画次数*/
+    -webkit-animation-delay: 0s; /*延迟时间*/
+}

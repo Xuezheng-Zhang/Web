@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css-1/ipad.css">
+    <style type="text/css">
+        body{
+            margin: 0;
+            padding:0;
+        }
+
+        #top{
+            height: 32px;
+            background: #EEEEEE;
+        }
+
+        #mid{
+            height:650px;
+            background: white;
+        }
+        .body_left{
+            width: 20%;
+            float: left;
+        }
+        .body_mid{
+            width: 60%;
+            float: left;
+        }
+        .body_right{
+            width: 20%;
+            float: left;
+        }
+        #bottom{
+            height: 120px;
+        }
+        .bottom_left{
+            width: 50%;
+            float: left;
+        }
+        .bottom_right{
+            width: 50%;
+            float: left;
+        }
+
+        #menu {
+            font:12px verdana, arial, sans-serif; /* 设置文字大小和字体样式 */
+            background: #EEEEEE;
+        }
+        #menu, #menu li {
+            list-style:none; /* 将默认的列表符号去掉 */
+            padding:0; /* 将默认的内边距去掉 */
+            margin:0; /* 将默认的外边距去掉 */
+        }
+        #menu li{
+            float: right;
+        }
+        #menu li a {
+            display:block; /* 将链接设为块级元素 */
+            padding:7px 25px; /* 设置内边距 */
+            background: #EEEEEE; /* 设置背景色 */
+            color: black; /* 设置文字颜色 */
+            text-decoration:none; /* 去掉下划线 */
+            border-right:1px solid #000; /* 在左侧加上分隔线 */
+        }
+    </style>
+    <script type="text/javascript">
+        //onload的作用是等事件加载完以后才执行此程序
+        window.onload=function()
+        {
+            //获取按钮事件
+            var bt1=document.getElementById("pre");
+            var bt2=document.getElementById("next");
+            //获取img标签中的第一个元素结点
+            var img=document.getElementsByTagName("img")[0];
+            //创建一个数组用来保存图片的路径（即src属性）
+            var imgarr=["img/xiaomixyj1.jpg","img/xiaomixyj2.jpg","img/xiaomixyj3.jpg","img/xiaomixyj4.jpg"];
+            //设置数组的索引下标
+            var index=0;
+            //获取p标签
+            var pbq=document.getElementById("pid");
+            //设置提醒文字
+            pbq.innerHTML="共有"+imgarr.length+"张图片,当前第"+(index+1)+"张";
+            //绑定事件
+            bt1.onclick=function()
+            {
+                //书写事件驱动程序
+                index--;//切换到上一张索引自减
+                //判断索引是否小于0
+                if(index<0)
+                {
+                    index=imgarr.length-1;//目的是可以实现循环切换
+                }
+                //修改img的src属性
+                img.src=imgarr[index];
+                //当点击按钮以后，重新设置p标签中的显示内容
+                pbq.innerHTML="共有"+imgarr.length+"张图片,当前第"+(index+1)+"张";
+            };
+            //绑定事件
+            bt2.onclick=function()
+            {
+                //书写事件驱动程序
+                index++;//切换到下一张索引自加
+                //判断索引是否大于4
+                if(index>imgarr.length-1)
+                {
+                    index=0;//目的是可以实现循环切换
+                }
+                //修改img的src属性
+                img.src=imgarr[index];
+                //当点击按钮以后，重新设置p标签中的显示内容
+                pbq.innerHTML="共有"+imgarr.length+"张图片,当前第"+(index+1)+"张";
+            };
+        };
+    </script>
+    <title>小米米家互联网洗烘一体机 物品页面</title>
+</head>
+<body>
+<!-- 	顶部导航栏 -->
+<div id="top">
+    <ul id="menu">
+        <li><a href="#">联系客服</a></li>
+        <li><a href="shopcar.jsp">购物车</a></li>
+        <li><a href="administrator.jsp">管理员</a></li>
+        <li><a href="test.html">注册</a></li>
+        <li><a href="signin1.html" class="last">登陆</a></li>
+    </ul>
+</div>
+
+<div id="mid">
+
+    <div class="body_left" style="text-align: center">
+        <input type="button" class="button_pre" id="pre" />
+        <style>
+            .button_pre{
+                background:none;
+                background-image: url("img/back.png");
+                border: none;
+                width: 100px;
+                height: 110px;
+                margin-top: 250px;
+            }
+        </style>
+    </div>
+
+    <div class="body_mid">
+        <div style="text-align: center">
+            <p id="pid"></p>  <!--作用是显示当图片是第几张图片-->
+            <hr/>
+        </div>
+        <div style="text-align: center">
+            <img src="img/xiaomixyj1.jpg" class="ipad">
+            <style>
+                .ipad{
+                    width: 450px;
+                }
+            </style>
+        </div>
+    </div>
+
+    <div class="body_right" style="text-align: center">
+        <input type="button" class="button_next" id="next" />
+        <style>
+            .button_next{
+                background:none;
+                background-image: url("img/next.png");
+                border: none;
+                width: 100px;
+                height: 110px;
+                margin-top: 250px;
+            }
+        </style>
+    </div>
+</div>
+
+<hr/>
+<div id="bottom">
+    <div class="bottom_left" style="text-align: center">
+        小米米家互联网洗烘一体机   
+        价格：2599元
+    </div>
+    <div class="bottom_right">
+        <div style="text-align: center" class="aaa">
+            <form action="Addshopcar.jsp" method="post">
+				<table>
+					<tr>
+						<td id="sbs">数量：<input type="text" name="num"></td>
+					</tr>
+					<tr>
+					<td id="sbt"><input type="hidden" name="seller" value="123456@qq.com" /></td>
+					</tr>
+					<tr>
+						<td id="sbu"><input type="hidden" name="gname" value="小米米家互联网洗烘一体机" /></td>
+					</tr>
+					<tr>
+						<td id="sbv"><input type="hidden" name="price" value="2599" /></td>
+					</tr>
+					<tr>
+						<td id="sbv"><input type="hidden" name="links" value="xiaomixyj.html" /></td>
+					</tr>
+				</table>
+				 <button class="registe button" >添加到购物车</button>
+				 </form>
+        </div>
+        <div style="text-align: center" class="bbb">
+            <form action="Addorder.jsp" method="post">
+				<table>
+					<tr>
+						<td id="sbs">数量：<input type="text" name="num"></td>
+					</tr>
+					<tr>
+					<td id="sbt"><input type="hidden" name="seller" value="123456@qq.com" /></td>
+					</tr>
+					<tr>
+						<td id="sbu"><input type="hidden" name="gname" value="小米米家互联网洗烘一体机" /></td>
+					</tr>
+					<tr>
+						<td id="sbv"><input type="hidden" name="price" value="2599" /></td>
+					</tr>
+					<tr>
+						<td id="sbv"><input type="hidden" name="links" value="xiaomixyj.html" /></td>
+					</tr>
+				</table>
+				 <button class="registe button" >购买</button>
+				 </form>
+        </div>
+        <style>
+            .aaa{
+                width: 25%;
+                float: left;
+            }
+            .bbb{
+                width: 25%;
+                float: left;
+            }
+
+        </style>
+    </div>
+</div>
+
+</body>
+</html>
